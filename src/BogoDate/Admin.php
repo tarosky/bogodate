@@ -56,7 +56,7 @@ final class Admin
 				function() use ( $locale ) {
 					$value = esc_attr( \BogoDate::get_instance()->get_option( 'date_format_' . $locale ) );
 					$prefix = esc_attr( $this->prefix );
-					echo "<input type='text' name='{$prefix}[date_format_{$locale}]' value='" . esc_attr( $value ) . "' placeholder='" . esc_attr( 'F j, Y' ) . "' />";
+					echo "<input type='text' name='{$prefix}[date_format_{$locale}]' value='" . esc_attr( $value ) . "' placeholder='" . esc_attr( get_option( 'date_format' ) ) . "' />";
 				},
 					$this->prefix,
 					'settings-' . $locale
@@ -68,7 +68,7 @@ final class Admin
 				function() use ( $locale ) {
 					$value = esc_attr( \BogoDate::get_instance()->get_option( 'time_format_' . $locale ) );
 					$prefix = esc_attr( $this->prefix );
-					echo "<input type='text' name='{$prefix}[time_format_{$locale}]' value='" . esc_attr( $value ) . "' placeholder='" . esc_attr( 'g:i a' ) . "' />";
+					echo "<input type='text' name='{$prefix}[time_format_{$locale}]' value='" . esc_attr( $value ) . "' placeholder='" . esc_attr( get_option( 'time_format' ) ) . "' />";
 				},
 					$this->prefix,
 					'settings-' . $locale
