@@ -32,10 +32,10 @@ We host our code on [Github](https://github.com/tarosky/bogodate), so feel free 
 
 == Screenshots ==
 
-W.I.P
+1. Date Format Settings
 
 == Changelog ==
 
-You can see all changelog on GitHub.
+= 1.0.0 =
 
-https://github.com/tarosky/bogodate/releases
+* Initial release.
