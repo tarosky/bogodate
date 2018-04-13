@@ -32,8 +32,8 @@ final class Admin
 	public function admin_menu() {
 		add_submenu_page(
 			'bogo',
-			__( 'Date Translation', 'bogodate' ),
-			__( 'Date Translation', 'bogodate' ),
+			__( 'Date Format', 'bogodate' ),
+			__( 'Date Format', 'bogodate' ),
 			'edit_pages',
 			$this->prefix,
 			array( $this, 'display' )
@@ -115,7 +115,7 @@ final class Admin
 		$action = untrailingslashit( admin_url() ) . '/options.php';
 ?>
 		<div class="wrap bogodate-settings">
-			<h1 class="wp-heading-inline">Bogo Date Settings</h1>
+			<h1 class="wp-heading-inline"><?php _e( 'Date Format Settings', 'bogodate' ); ?></h1>
 			<form action="<?php echo esc_url( $action ); ?>" method="post">
 <?php
 			settings_fields( $this->prefix . '-settings' );
