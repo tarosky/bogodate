@@ -56,11 +56,21 @@ final class Admin
 				function() use ( $locale ) {
 					$value = esc_attr( \BogoDate::get_instance()->get_option( 'date_format_' . $locale ) );
 					$prefix = esc_attr( $this->prefix );
-					echo "<input type='text' name='{$prefix}[date_format_{$locale}]' value='" . esc_attr( $value ) . "' placeholder='" . esc_attr( get_option( 'date_format' ) ) . "' />";
+					echo "<input
+						class='dateformat'
+						type='text'
+						name='{$prefix}[date_format_{$locale}]'
+						value='" . esc_attr( $value ) . "'
+						placeholder='" . esc_attr( get_option( 'date_format' ) ) . "'
+						data-default='" . esc_attr( get_option( 'date_format' ) ) . "'
+						/>";
+					echo "&nbsp";
+					echo "<code class='example'>" . ( $value ? date_i18n( $value ) : date_i18n( get_option( 'date_format' ) ) ) . "</code>";
+					echo "<span class='spinner'></span>";
 				},
-					$this->prefix,
-					'settings-' . $locale
-				);
+				$this->prefix,
+				'settings-' . $locale
+			);
 
 			add_settings_field(
 				'time_format_' . $locale,
@@ -68,11 +78,21 @@ final class Admin
 				function() use ( $locale ) {
 					$value = esc_attr( \BogoDate::get_instance()->get_option( 'time_format_' . $locale ) );
 					$prefix = esc_attr( $this->prefix );
-					echo "<input type='text' name='{$prefix}[time_format_{$locale}]' value='" . esc_attr( $value ) . "' placeholder='" . esc_attr( get_option( 'time_format' ) ) . "' />";
+					echo "<input
+						class='timeformat'
+						type='text'
+						name='{$prefix}[time_format_{$locale}]'
+						value='" . esc_attr( $value ) . "'
+						placeholder='" . esc_attr( get_option( 'time_format' ) ) . "'
+						data-default='" . esc_attr( get_option( 'time_format' ) ) . "'
+						/>";
+					echo "&nbsp";
+					echo "<code class='example'>" . ( $value ? date_i18n( $value ) : date_i18n( get_option( 'time_format' ) ) ) . "</code>";
+					echo "<span class='spinner'></span>";
 				},
-					$this->prefix,
-					'settings-' . $locale
-				);
+				$this->prefix,
+				'settings-' . $locale
+			);
 		}
 	}
 
@@ -83,12 +103,18 @@ final class Admin
 			array( 'jquery' ),
 			filemtime( dirname( dirname( dirname( __FILE__ ) ) ) . '/assets/js/admin.js' )
 		);
+		wp_enqueue_style(
+			'bogodate-admin',
+			plugins_url( '/assets/css/admin.css', dirname( dirname( __FILE__ ) ) ),
+			array(),
+			filemtime( dirname( dirname( dirname( __FILE__ ) ) ) . '/assets/css/admin.css' )
+		);
 	}
 
 	public function display() {
 		$action = untrailingslashit( admin_url() ) . '/options.php';
 ?>
-		<div class="wrap social-settings">
+		<div class="wrap bogodate-settings">
 			<h1 class="wp-heading-inline">Bogo Date Settings</h1>
 			<form action="<?php echo esc_url( $action ); ?>" method="post">
 <?php
