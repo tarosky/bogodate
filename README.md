@@ -21,6 +21,13 @@ You can add date format settings to your Bogo.
 
 This plugin requires [Bogo](https://wordpress.org/plugins/bogo/) version 3.1.4 or later.
 
+### Features
+
+* Date format settings
+  * Filter `get_the_date()`, `get_the_modified_date()`
+* Time format settings
+  * Filter `get_the_time()`, `get_the_modified_time()`
+
 ## Installation
 
 1. Upload the entire `bogodate` folder to the `/wp-content/plugins/` directory.
