@@ -1,4 +1,5 @@
-# Bogo Date
+Bogo Date
+==================
 
 Contributors: tarosky, ko31
 Tags: bogo, multilingual, localization, language, locale
