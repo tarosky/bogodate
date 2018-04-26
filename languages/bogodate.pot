@@ -1,0 +1,158 @@
+# Copyright (C) 2018 Bogo Date
+# This file is distributed under the same license as the Bogo Date package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Bogo Date 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bogodate\n"
+"POT-Creation-Date: 2018-04-26 07:19:59+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: bogodate.php:20
+msgid "Sorry, Bogo is not installed."
+msgstr ""
+
+#: src/BogoDate/Admin.php:35 src/BogoDate/Admin.php:36
+#: src/BogoDate/Admin.php:55
+msgid "Date Format"
+msgstr ""
+
+#: src/BogoDate/Admin.php:77
+msgid "Time Format"
+msgstr ""
+
+#: src/BogoDate/Admin.php:118
+msgid "Date Format Settings"
+msgstr ""
+
+#: vendor/wp-cli/core-command/src/Core_Command.php:429
+#: vendor/wp-cli/core-command/src/Core_Command.php:502
+msgctxt "Default network name"
+msgid "%s Sites"
+msgstr ""
+
+#: vendor/wp-cli/core-command/src/Core_Command.php:651
+msgid "Wildcard DNS may not be configured correctly."
+msgstr ""
+
+#: vendor/wp-cli/cron-command/src/Cron_Event_Command.php:428
+msgid "%s year"
+msgid_plural "%s years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: vendor/wp-cli/cron-command/src/Cron_Event_Command.php:429
+msgid "%s month"
+msgid_plural "%s months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: vendor/wp-cli/cron-command/src/Cron_Event_Command.php:430
+msgid "%s week"
+msgid_plural "%s weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: vendor/wp-cli/cron-command/src/Cron_Event_Command.php:431
+msgid "%s day"
+msgid_plural "%s days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: vendor/wp-cli/cron-command/src/Cron_Event_Command.php:432
+msgid "%s hour"
+msgid_plural "%s hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: vendor/wp-cli/cron-command/src/Cron_Event_Command.php:433
+msgid "%s minute"
+msgid_plural "%s minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: vendor/wp-cli/cron-command/src/Cron_Event_Command.php:434
+msgid "%s second"
+msgid_plural "%s seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: vendor/wp-cli/entity-command/src/Site_Command.php:118
+msgid "Uncategorized"
+msgstr ""
+
+#. translators: Default category slug
+#: vendor/wp-cli/entity-command/src/Site_Command.php:121
+msgctxt "Default category slug"
+msgid "Uncategorized"
+msgstr ""
+
+#: vendor/wp-cli/export-command/src/Export_Command.php:339
+msgid "Invalid start ID: %d"
+msgstr ""
+
+#: vendor/wp-cli/export-command/src/WP_Export_File_Writer.php:15
+#: vendor/wp-cli/export-command/src/WP_Export_Split_Files_Writer.php:63
+msgid "WP Export: error opening %s for writing."
+msgstr ""
+
+#: vendor/wp-cli/export-command/src/WP_Export_File_Writer.php:32
+#: vendor/wp-cli/export-command/src/WP_Export_Split_Files_Writer.php:51
+msgid "WP Export: error writing to export file."
+msgstr ""
+
+#: vendor/wp-cli/export-command/src/WP_Export_Query.php:348
+msgid "Term is missing a parent: %s (%d)"
+msgstr ""
+
+#: vendor/wp-cli/export-command/src/WP_Export_XML_Over_HTTP.php:19
+#: vendor/wp-cli/export-command/src/WP_Export_XML_Over_HTTP.php:23
+msgid "Export Error"
+msgstr ""
+
+#: vendor/wp-cli/extension-command/src/WP_CLI/CommandWithUpgrade.php:607
+msgid " Try again"
+msgstr ""
+
+#: vendor/wp-cli/extension-command/src/WP_CLI/CommandWithUpgrade.php:612
+msgid "API error. Try Again."
+msgstr ""
+
+#: vendor/wp-cli/media-command/src/Media_Command.php:142
+msgid "image"
+msgid_plural "images"
+msgstr[0] ""
+msgstr[1] ""
+
+#: vendor/wp-cli/wp-cli/php/utils-wp.php:192
+msgid "Inactive Widgets"
+msgstr ""
+
+#: vendor/wp-cli/wp-cli/php/utils-wp.php:195
+msgid ""
+"Drag widgets here to remove them from the sidebar but keep their settings."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Bogo Date"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/tarosky/bogodate"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Date format as a Bogo extension for WordPress."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "tarosky, ko31"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://tarosky.co.jp/"
+msgstr ""
