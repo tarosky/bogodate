@@ -8,43 +8,46 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Ko Takagi <takagi@go-sign.info>\n"
+"PO-Revision-Date: 2018-04-27 11:08+0900\n"
 "Language-Team: Ko Takagi <takagi@go-sign.info>\n"
+"X-Generator: Poedit 2.0.6\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ja\n"
 
 #: bogodate.php:20
 msgid "Sorry, Bogo is not installed."
-msgstr ""
+msgstr "Bogo がインストールされていません。"
 
 #: src/BogoDate/Admin.php:35 src/BogoDate/Admin.php:36
 #: src/BogoDate/Admin.php:55
 msgid "Date Format"
-msgstr ""
+msgstr "日付フォーマット"
 
 #: src/BogoDate/Admin.php:77
 msgid "Time Format"
-msgstr ""
+msgstr "時刻フォーマット"
 
 #: src/BogoDate/Admin.php:118
 msgid "Date Format Settings"
-msgstr ""
+msgstr "日付フォーマット設定"
 
 #. Plugin Name of the plugin/theme
 msgid "Bogo Date"
-msgstr ""
+msgstr "Bogo Date"
 
 #. Plugin URI of the plugin/theme
 msgid "https://github.com/tarosky/bogodate"
-msgstr ""
+msgstr "https://github.com/tarosky/bogodate"
 
 #. Description of the plugin/theme
 msgid "Date format as a Bogo extension for WordPress."
-msgstr ""
+msgstr "WordPress の Bogo に日付フォーマットを拡張します。"
 
 #. Author of the plugin/theme
 msgid "tarosky, ko31"
-msgstr ""
+msgstr "tarosky, ko31"
 
 #. Author URI of the plugin/theme
 msgid "https://tarosky.co.jp/"
-msgstr ""
+msgstr "https://tarosky.co.jp/"

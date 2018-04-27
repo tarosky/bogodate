@@ -24,6 +24,7 @@ class BogoDate
 	}
 
 	public function plugins_loaded() {
+		load_plugin_textdomain( $this->get_prefix(), false, 'bogodate/languages' );
 		if ( is_admin() ) {
 			BogoDate\Admin::get_instance()->register();
 		}
